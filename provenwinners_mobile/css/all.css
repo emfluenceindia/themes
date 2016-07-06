@@ -1,0 +1,1481 @@
+/* This is a SASS stylesheet */
+/**
+ * Abstract Classes
+ **/
+.constraint {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; }
+
+.constraint > .content {
+  padding: 0 .75em; }
+
+header {
+  z-index: 3;
+  height: 24px;
+  line-height: 24px;
+  background: #29853a;
+  /* Old browsers */
+  background: linear-gradient(to bottom, #29853a 0%, #1e8431 100%);
+  /* W3C */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  position: relative;
+  margin-bottom: 5px; }
+
+header #home-link {
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  font-family: Georgia;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  letter-spacing: 0.1em; }
+  header #home-link .sup {
+    font-size: 8px;
+    position: relative;
+    top: -10px; }
+
+header #navigation-toggle {
+  color: #FFFFFF;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1em; }
+
+header #navigation-toggle span {
+  display: none; }
+
+@media (min-width: 480px) {
+  header #navigation-toggle span {
+    display: inline; } }
+@media (min-width: 1200px) {
+  header {
+    padding-left: 0;
+    padding-right: 0; }
+
+  header > .constraint > .content {
+    padding-left: 2px;
+    padding-right: 2px; } }
+#content > .constraint
+, #navigation {
+  background: #fcfefb;
+  /* Old browsers */
+  background: linear-gradient(to bottom, #fff 0px, #fcfefb -70px, #eff7e9 100%);
+  /* W3C */
+  border-radius: 5px;
+  min-height: 100px;
+  padding-bottom: 30px; }
+
+#navigation #block-proven_winners-primary_menu .menu {
+  overflow: hidden;
+  font-size: 19px;
+  line-height: 1em;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0; }
+
+#navigation #block-proven_winners-primary_menu .menu li {
+  margin-bottom: 8px;
+  font-weight: bold; }
+
+#navigation #block-proven_winners-primary_menu .menu li a {
+  display: block;
+  text-decoration: none; }
+
+#navigation #block-proven_winners-primary_menu .menu .menu {
+  margin-top: 7px;
+  font-size: 16px; }
+
+#navigation #block-proven_winners-primary_menu .menu .menu li {
+  margin-bottom: 3px;
+  width: 100%;
+  font-weight: normal; }
+
+#navigation #block-proven_winners-primary_menu .menu > li > .menu-wrapper {
+  font-size: 14px;
+  margin-bottom: .5em;
+  padding-left: 1.5em; }
+
+#navigation #block-proven_winners-primary_menu .menu > li > .menu .menu-wrapper {
+  display: none; }
+
+.has_bumpout_submenu #block-proven_winners-primary_menu > .block-content > .menu-block- {
+  display: none; }
+
+@media (min-width: 640px) {
+  #navigation #block-proven_winners-primary_menu .menu > li {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0; }
+
+  #navigation #block-proven_winners-primary_menu .menu > li:nth-child(2n+1) {
+    clear: left; }
+
+  #navigation #block-proven_winners-primary_menu .menu > li li {
+    float: none; } }
+@media (min-width: 980px) {
+  #navigation #block-proven_winners-primary_menu .menu > li {
+    float: left;
+    width: 33%; }
+
+  #navigation #block-proven_winners-primary_menu .menu > li:nth-child(2n+1) {
+    clear: none; }
+
+  #navigation #block-proven_winners-primary_menu .menu > li:nth-child(3n+1) {
+    clear: left; } }
+#navigation .email-signup
+, #navigation .search-form {
+  border-bottom: solid 1px #497136;
+  padding: .5em 0;
+  text-align: center; }
+
+#navigation .email-signup form
+, #navigation .search-form form {
+  display: block; }
+
+#navigation .email-signup .heading
+, #navigation .search-form lable
+, #navigation .email-signup .fields {
+  display: inline; }
+
+#navigation .email-signup .heading
+, #navigation .search-form label {
+  font: bold 1.167em/28px Georgia, serif;
+  color: #497136;
+  margin-right: .5em; }
+
+#navigation .email-signup .form-submit
+, #navigation .search-form .form-submit {
+  display: inline;
+  margin: 0 0 0 5px;
+  border-style: none;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/btn-signup.gif") no-repeat 0 -23px;
+  cursor: pointer; }
+
+@media (min-width: 800px) {
+  #navigation .email-signup
+  , #navigation .search-form {
+    float: left;
+    width: 50%; } }
+#scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 22px;
+  color: #29853A;
+  border: solid 2px #29853A;
+  border-radius: 8px;
+  background-color: #eff7e9;
+  background-color: rgba(239, 247, 233, 0.3);
+  padding: 3px 8px;
+  cursor: pointer;
+  display: none;
+  transition: background-color .5s ease, color .5s ease, border-color .5s ease, opacity .5s ease;
+  opacity: .7;
+  z-index: 999; }
+
+#scroll-to-top:hover {
+  opacity: 1;
+  color: #09651A;
+  border-color: #09651A;
+  background-color: #dcf5dc; }
+
+.breadcrumbs {
+  padding: 0 0 0 16px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/icon-home.gif") no-repeat 10px 12px;
+  z-index: 3;
+  position: relative; }
+
+.breadcrumbs ul {
+  overflow: hidden;
+  margin: 0 13px 0 7px;
+  padding: 7px 0 9px 2px;
+  list-style: none; }
+
+.breadcrumbs ul li {
+  display: inline;
+  float: left;
+  margin: 0 14px 0 -14px;
+  padding: 3px 0 0 15px;
+  height: 20px;
+  font: 1em/1.333em Arial, Helvetica, sans-serif;
+  color: #9b0071;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/sep-breadcrumbs.gif") no-repeat 0 50%; }
+
+.breadcrumbs ul li a {
+  float: left;
+  text-decoration: none;
+  color: #166310;
+  white-space: nowrap; }
+
+.breadcrumbs ul li a:hover {
+  text-decoration: underline; }
+
+/* User Menu Block */
+.user-menu-block {
+  max-width: none;
+  min-width: none;
+  position: relative;
+  border-bottom: 1px solid #AAA;
+  padding: 3px 0;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  line-height: 1.3em;
+  background: #EEFFEE; }
+
+.user-menu-block:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.user-menu-block a {
+  color: #295116; }
+
+.user-menu-block .cart {
+  float: left;
+  width: auto;
+  background-color: transparent; }
+
+.user-menu-block .welcome-message {
+  float: right;
+  width: auto;
+  margin-bottom: .5em; }
+
+.user-menu-block #resize-box {
+  float: right;
+  clear: right;
+  width: auto;
+  position: relative; }
+
+.user-menu-block > .menu {
+  float: right;
+  position: relative; }
+
+.user-menu-block > .menu > .menus {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.user-menu-block > .menu > .menus {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 172px;
+  background: #ffffff url("//c1.provenwinners.com/sites/all/themes/provenwinners/images/bg-account-popup-b.png") no-repeat 0 100%;
+  z-index: 10; }
+
+.user-menu-block > .menu ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 8px 0 7px;
+  height: 1%;
+  list-style: none; }
+
+.user-menu-block > .menu ul li {
+  border-top: 1px solid #e5e5e5;
+  padding: 0 0 1px 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.user-menu-block > .menu .footer {
+  display: block;
+  overflow: hidden;
+  margin: 0 9px;
+  text-indent: -9999px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners/images/arrow-up.gif") no-repeat 100% 0; }
+
+#resize-box .title {
+  float: left;
+  padding: 4px 2px 0 12px;
+  font: bold 0.833em/1.2em Arial, Helvetica, sans-serif;
+  color: #b45a97; }
+
+#resize-box ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#resize-box ul li {
+  float: left;
+  padding: 0 2px 0 1px;
+  margin-bottom: 0; }
+
+#resize-box ul li a {
+  float: left;
+  padding: 0 2px;
+  height: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 19px;
+  font-weight: bold;
+  text-decoration: none; }
+
+#resize-box ul li a.decrease {
+  padding: 4px 2px 0;
+  height: 15px;
+  line-height: 12px;
+  font-size: 10px; }
+
+#resize-box ul li a.reset {
+  padding: 2px 2px 0;
+  height: 17px;
+  line-height: 16px;
+  font-size: 13px; }
+
+#resize-box ul li a.increase {
+  padding: 1px 2px 0;
+  height: 18px;
+  line-height: 19px;
+  font-size: 16px; }
+
+#resize-box ul li a:hover,
+#resize-box ul li.active a {
+  background: #cddcc5; }
+
+.tabs-block .nojs-tabset li a:hover,
+.tabs-block .nojs-tabset li a:active,
+.tabs-block .tabset li a:hover,
+.tabs-block .tabset li a.active {
+  position: relative; }
+
+.tabs-block .nojs-tabset li a .l,
+.tabs-block .tabset li a .l {
+  float: left;
+  padding: 7px 0 0 9px;
+  height: 25px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-tab-l.gif") no-repeat 0 -32px; }
+
+.tabs-block .nojs-tabset li a .r,
+.tabs-block .tabset li a .r {
+  float: left;
+  width: 25px;
+  height: 32px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-tab-r.gif") no-repeat 0 -32px; }
+
+.tabs-block .nojs-tabset li a:hover .l,
+.tabs-block .nojs-tabset li a.active .l,
+.tabs-block .tabset li a:hover .l,
+.tabs-block .tabset li a.active .l {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-tab-l.gif") no-repeat; }
+
+.tabs-block .nojs-tabset li a:hover .r,
+.tabs-block .nojs-tabset li a.active .r,
+.tabs-block .tabset li a:hover .r,
+.tabs-block .tabset li a.active .r {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-tab-r.gif") no-repeat; }
+
+.tabs-block .tab-holder {
+  border: 1px solid #d9d9d9;
+  padding: 5px 7px 8px;
+  min-height: 50px;
+  background: #fff url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-tab-holder.gif") repeat-x 0 100%; }
+
+.tabs-block .tab-holder p {
+  margin: 0 0 6px; }
+
+/* Font reset */
+.ui-tabs h1
+, .ui-tabs .h1
+, .ui-tabs h2
+, .ui-tabs .h2
+, .ui-tabs h3
+, .ui-tabs .h3
+, .ui-tabs h4
+, .ui-tabs .h4
+, .ui-tabs h5
+, .ui-tabs .h5
+, .ui-tabs h6
+, .ui-tabs .h6 {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit; }
+
+.ui-tabs li a:hover,
+.ui-tabs li.ui-tabs-selected a,
+.ui-tabs li a.active {
+  padding-bottom: 3px;
+  line-height: 1.214em;
+  font-size: 1.167em;
+  color: #497136;
+  background: #e3f2d7; }
+
+.form-search3 {
+  overflow: hidden;
+  padding: 12px 0 9px;
+  width: 100%;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/border2.gif") repeat-x; }
+
+.form-search3 .submit {
+  float: left;
+  margin: -2px 0 0;
+  border-style: none;
+  padding: 0;
+  width: 80px;
+  height: 29px;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/btn-search3.gif") no-repeat;
+  cursor: pointer; }
+
+.tabs-block .tab-holder .row .more {
+  float: right;
+  margin: 1px 2px 0 0;
+  padding: 0 0 2px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/arrow-down.gif") no-repeat 0 50%; }
+
+.sort-list {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.sort-list li {
+  display: inline;
+  margin: 0 6px 0 -6px;
+  padding: 0 4px 0 7px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/sep-sort-list.gif") no-repeat 0 50%; }
+
+.sort-list li:first-child {
+  background: none; }
+
+.sort-list li.active {
+  font-weight: bold; }
+
+.sort-list li a {
+  color: #b45a97; }
+
+.list2 {
+  margin: 0;
+  padding: 0 0 16px;
+  list-style: none; }
+
+.list2 li {
+  padding: 0 0 2px 11px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bullet3.gif") no-repeat 0 50%; }
+
+.sell-block {
+  padding: 0 10px 0 0; }
+
+.sell-block h3, .sell-block .h3 {
+  overflow: hidden;
+  margin: 0;
+  border-bottom: 4px solid #b45a97;
+  padding: 3px 0 4px;
+  width: 100%;
+  line-height: 1.214em;
+  font-size: 1.167em;
+  color: #497136; }
+
+.buy-link {
+  float: right;
+  margin: -3px 11px 0 0;
+  padding: 0 0 0 23px;
+  font: bold 12px/16px Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #497136;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/icon-buy2.gif") no-repeat 0 50%; }
+
+.buy-link:hover {
+  text-decoration: underline; }
+
+.sell-block .holder {
+  overflow: hidden;
+  padding: 31px 0 22px;
+  width: 100%; }
+
+.sell-block .frame {
+  width: 730px; }
+
+.sell-block .box img {
+  display: block;
+  margin: 0 auto 17px; }
+
+.sell-block .box .heading {
+  padding: 4px 4px 7px;
+  line-height: 1.222em;
+  font-size: 0.75em;
+  color: #037418;
+  background: #e3f2d7; }
+
+.sell-block .box .heading strong {
+  display: block; }
+
+.sell-block .box {
+  float: left;
+  padding: 0 20px 0 0;
+  width: 160px;
+  line-height: 1.25em;
+  font-size: 1em;
+  color: #363636; }
+
+.sell-block .box .txt {
+  padding: 3px 0 0 6px; }
+
+.sell-block .box .title {
+  display: block;
+  line-height: 1.2em;
+  font-size: 0.833em;
+  color: #166310; }
+
+.sell-block .box .txt p {
+  margin: 0 0 6px; }
+
+.home-page #sidebar {
+  padding: 0 0 13px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-home-sidebar.gif") repeat-y 100% 0; }
+
+.side-box {
+  padding: 0 20px 5px 8px; }
+
+.side-box h3, .side-box .h3 {
+  margin: 0 0 3px;
+  border-bottom: 4px solid #b45a97;
+  padding: 5px 8px;
+  line-height: 1.214em;
+  font-size: 1.167em;
+  color: #497136; }
+
+#sidebar .menu,
+.side-list {
+  margin: 0;
+  padding: 0 0 8px 20px;
+  list-style: none; }
+
+#sidebar .menu li,
+.side-list li {
+  padding: 0 0 0 10px;
+  line-height: 1.2em;
+  font-size: 0.833em;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bullet-side-list.gif") no-repeat 0 50%; }
+
+#sidebar .menu a,
+.side-list a {
+  line-height: 1.429em;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #497136; }
+
+#sidebar .menu a:hover,
+.side-list a:hover {
+  text-decoration: underline; }
+
+.form-search2 {
+  margin: 12px 0px 12px 0px;
+  padding: 2px 0 0;
+  width: 100%; }
+
+.form-search2 .container-inline {
+  overflow: hidden;
+  padding: 0 0 0 12px;
+  height: 1%; }
+
+.form-search2 .form-item {
+  float: left;
+  padding: 5px 8px 0;
+  width: 144px;
+  height: 17px; }
+
+.form-search2 .form-item input {
+  float: left;
+  margin: 0;
+  width: 100%;
+  line-height: 14px;
+  font-size: 11px;
+  background: none; }
+
+.form-search2 .form-submit {
+  display: inline;
+  float: left;
+  margin: 0 0 0 6px;
+  border-style: none;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  line-height: 0;
+  font-size: 0;
+  text-indent: -9999px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/btn-signup.gif") no-repeat 0 -23px;
+  cursor: pointer; }
+
+.info-grid .header {
+  overflow: auto;
+  clear: both; }
+
+.info-grid .header h2 {
+  float: left; }
+
+.info-grid .header .more {
+  margin: 7px 0 0 15px;
+  float: left; }
+
+/**
+ * Page titles
+ */
+.page-title img {
+  vertical-align: middle; }
+
+/**
+ * Collapsible fieldsets
+ */
+*:first-child + html fieldset > .description, *:first-child + html fieldset .fieldset-wrapper .description {
+  padding-top: 10px; }
+
+*:first-child + html fieldset legend, *:first-child + html fieldset.collapsed legend {
+  display: inline; }
+
+html.js fieldset.collapsed {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 1em;
+  height: 2em; }
+
+fieldset legend {
+  font-size: 1.5em;
+  line-height: 1em;
+  color: #b45a97; }
+
+html.js fieldset.collapsible legend a {
+  padding-left: 20px;
+  /* LTR */ }
+
+html.js fieldset.collapsible .fieldset-wrapper {
+  overflow: hidden; }
+
+/**
+ * uc_out_of_stock css
+ */
+html.js .uc_out_of_stock_html .uc_out_of_stock_replacement {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/buttons/sliding-door/pink-center.png") repeat-x scroll 0 0 transparent;
+  border: medium none;
+  margin: 0;
+  overflow: visible;
+  padding: 0 0 2px;
+  width: auto;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font: 12px/15px Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  display: block; }
+
+/*
+* Grid display for products and other information
+*/
+.info-grid .views-field-nothing {
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+  color: transparent; }
+
+.field, .location-locations-wrapper {
+  margin-bottom: 1em; }
+
+/*
+* Learn Plant Trials View Styles
+*/
+.view-learn-plant-trials .views-row {
+  background-color: #F7ECF3;
+  border: 1px solid #DAB7CB;
+  margin-bottom: 15px;
+  padding: 14px;
+  position: relative;
+  overflow: auto;
+  line-height: 1.5em; }
+
+.view-learn-plant-trials .views-row .views-field-title-2 {
+  font-weight: bold; }
+
+.view-learn-plant-trials .views-row .views-field-field-hours-value {
+  margin-bottom: 1em;
+  font-weight: bold; }
+
+/* Local Retailer Block */
+#block-retailer-local_retailers .block-subject {
+  display: none; }
+
+#block-retailer-local_retailers .block-content {
+  padding-left: 0;
+  padding-right: 0; }
+
+#block-retailer-local_retailers .location-prompt p {
+  margin-bottom: 0; }
+
+#block-retailer-local_retailers .location-prompt .current-location {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.25em; }
+
+#block-retailer-local_retailers .location-prompt .current-location, #block-retailer-local_retailers .location-prompt .current-location a {
+  color: #497136; }
+
+#block-retailer-local_retailers .location-prompt .change-location {
+  margin-bottom: 5px; }
+
+#block-retailer-local_retailers .location-prompt .change-location {
+  font: bold 0.833em/1.1em Georgia,serif; }
+
+#block-retailer-local_retailers .location-prompt .change-location, #block-retailer-local_retailers .location-prompt .change-location a {
+  color: #000; }
+
+#block-retailer-local_retailers .view {
+  clear: both;
+  font-family: arial,sans-serif;
+  font-size: 11px; }
+
+#block-retailer-local_retailers .view .views-row {
+  padding-left: 55px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/retailer-search-graphic.png") no-repeat 0 0;
+  min-height: 55px;
+  margin-bottom: .66em; }
+
+#block-retailer-local_retailers .view .views-field-title {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  margin: 0 0 .5em 0; }
+
+/* todo, these two */
+#local-container .more {
+  overflow: hidden;
+  height: 1%;
+  font: bold 0.917em/1.273em Georgia, serif; }
+
+#local-container .more a {
+  float: right;
+  padding: 2px 20px 2px 0;
+  text-decoration: none;
+  color: #497136; }
+
+footer {
+  overflow: hidden;
+  line-height: 1.5em;
+  color: #497136;
+  padding: 1.5em 5px;
+  margin: 5px;
+  text-align: center; }
+  @media (min-width: 400px) {
+    footer .footer-social-media {
+      text-align: center;
+      text-transform: uppercase; }
+      footer .footer-social-media .h3 {
+        display: block;
+        padding-bottom: 0.2em; } }
+
+footer a {
+  text-decoration: none;
+  color: #497136; }
+
+footer a:hover {
+  text-decoration: underline; }
+
+footer p {
+  margin: 11px 0 0; }
+
+footer .rights {
+  padding: 0 0 0 5px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/sep-bottom-nav.gif") no-repeat 0 50%; }
+
+footer .column-left {
+  width: 39.9%; }
+
+footer .column-right {
+  width: 60%; }
+
+footer .menu {
+  overflow: hidden;
+  margin: 0;
+  padding: 0 0 3px;
+  width: 100%;
+  list-style: none; }
+
+footer .menu li {
+  float: left;
+  margin: 0 4px 0 -4px;
+  padding: 0 3px 2px 4px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/sep-bottom-nav.gif") no-repeat 0 50%; }
+
+/**
+ * Professional Footer Menu
+ **/
+footer #block-menu-menu-professionals-footer {
+  float: right;
+  border: 1px solid #ddd;
+  padding: 3px 0 3px 2px;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-pro-nav.gif") repeat-x 0 100%;
+  clear: none; }
+
+footer #block-menu-menu-professionals-footer .block-subject {
+  display: none; }
+
+footer #block-menu-menu-professionals-footer ul {
+  overflow: hidden;
+  float: left;
+  margin: 0;
+  padding: 0;
+  height: 1%;
+  list-style: none; }
+
+footer #block-menu-menu-professionals-footer ul li {
+  float: left;
+  margin: 0 2px 0 -2px;
+  padding: 0 10px;
+  width: 80px;
+  font: 1.111em/1.4em Georgia, serif;
+  text-align: center;
+  background-image: none;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/sep-pro-nav.gif") repeat-y 98px 0; }
+
+footer #block-menu-menu-professionals-footer ul li.last {
+  background: none; }
+
+footer #block-menu-menu-professionals-footer ul li a {
+  display: block;
+  min-height: 28px; }
+
+footer #block-menu-menu-professionals-footer ul li strong {
+  font: bold 1.1em/1.273em Georgia, serif;
+  letter-spacing: -1px; }
+
+footer .block {
+  clear: both;
+  margin: 0 0 1.5em 0; }
+
+footer #block-menu-secondary-links {
+  margin-bottom: 0; }
+
+.bottom-bar {
+  overflow: hidden;
+  padding: 3px 0 0 21px;
+  height: 1%;
+  background: #ebebeb url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-bottom-bar.gif") repeat-x; }
+
+.socials-list {
+  float: left;
+  margin: 0;
+  padding: 2px 0;
+  list-style: none; }
+
+.socials-list li {
+  float: left;
+  padding: 7px 12px 0 0;
+  line-height: 1.2em;
+  font-size: 0.833em; }
+
+.socials-list .alignleft {
+  float: left;
+  margin: -7px 4px 0 0; }
+
+.socials-list li a {
+  text-decoration: none;
+  color: #444; }
+
+.faq-link {
+  float: right;
+  padding: 4px 0 5px 25px;
+  width: 153px;
+  line-height: 1.111em;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #464646;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-faq-link.gif") no-repeat; }
+
+.faq-link span {
+  display: block;
+  line-height: 0.833em;
+  font-size: 1.333em;
+  font-weight: bold; }
+
+.field-type-link .field-items {
+  max-width: 284px;
+  overflow: hidden; }
+
+/* Form inputs */
+html.js input.form-autocomplete {
+  background-position: 100% 0.6em; }
+
+.location .form-item label {
+  float: none; }
+
+#flyout div.content {
+  width: auto !important;
+  padding: 0 !important; }
+
+/**
+ * Unpublished Content
+ **/
+/**
+ * Preview Content
+ **/
+.preview {
+  background-color: #fcfce8;
+  border: 1px solid #e5e58f;
+  margin: .75em 0 .75em;
+  padding: .5em 1em; }
+
+div.error, tr.error {
+  color: #a30000;
+  background-color: #FFCCCC; }
+
+/**
+ * Comment
+ **/
+.comment .picture {
+  float: left;
+  margin: 1em 1em .75em 0; }
+
+.comment .links {
+  border-top: 1px solid #C9C9C9;
+  padding-top: 0.5em; }
+
+.comment .links li {
+  display: inline;
+  margin-right: 1em; }
+
+/**
+ * Node formatting
+ **/
+.node {
+  position: relative; }
+
+/**
+ * Fieldgroups
+ */
+.fieldgroup > legend {
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.fieldgroup > .description {
+  margin-bottom: 1em; }
+
+/**
+ * Views
+ **/
+html fieldset.collapsible .fieldset-wrapper #edit-filters-wrapper {
+  margin: 0; }
+
+.view .views-field-title {
+  color: #497136;
+  font-size: 1.167em;
+  line-height: 1.063em;
+  margin: 0 0 9px 0; }
+
+.view-id-Events .views-row label {
+  font-weight: bold; }
+
+.view-id-Events .views-row .views-field-body {
+  margin-top: .5em; }
+
+.date-views-filter-wrapper {
+  min-width: inherit; }
+
+/**
+ * Find a Retailer / Local Retailers
+ **/
+.view-id-local_retailers .views-exposed-form .views-exposed-widget {
+  padding: 0;
+  float: none; }
+
+.view-id-local_retailers .view-filters .views-exposed-widget-wrapper > label {
+  display: none; }
+
+.view-id-local_retailers .views-exposed-widget input
+, .view-id-local_retailers .views-exposed-widget select {
+  width: 100%; }
+
+.view-id-local_retailers .geolocation-options .form-radios {
+  margin-top: 0;
+  overflow: hidden; }
+
+.view-id-local_retailers .geolocation-options .form-radios .form-item {
+  float: left;
+  width: auto;
+  margin-right: 1em; }
+
+.view-id-local_retailers #edit-distance-search-units-wrapper {
+  margin-top: 15px; }
+
+.view-id-local_retailers .view-content .views-field-title {
+  font-weight: bold;
+  display: inline;
+  margin-right: .5em;
+  margin-bottom: 0;
+  text-decoration: none; }
+
+.view-id-local_retailers .view-content .views-field-title a {
+  text-decoration: none;
+  color: #000000; }
+
+.view-id-local_retailers .view-content .views-field-distance {
+  display: inline;
+  font-size: .9em;
+  font-style: italic; }
+
+.view-id-local_retailers .view-content .views-field-address {
+  margin-top: .5em;
+  margin-bottom: .5em; }
+
+.view-id-local_retailers .view-content .views-field-field-phone-value .views-label-field-phone-value {
+  display: inline; }
+
+.view-id-local_retailers .view-content .views-field-view-node {
+  margin-bottom: 1em; }
+
+.view-id-local_retailers .view-content .views-field-field-plant-programs-nid {
+  overflow: hidden; }
+
+.view-id-local_retailers .view-content .views-field-field-plant-programs-nid .field-item {
+  float: left;
+  width: auto;
+  height: 42px;
+  overflow: hidden;
+  margin: 0 .5em .5em 0; }
+
+/**
+ * Find a wholesaler / Local wholesalers
+ **/
+.view-id-wholesalers .views-exposed-form .views-exposed-widget {
+  padding: 0;
+  float: none; }
+
+.view-id-wholesalers .view-filters .views-exposed-widget-wrapper > label {
+  display: none; }
+
+.view-id-wholesalers .views-exposed-widget input
+, .view-id-wholesalers .views-exposed-widget select {
+  width: 100%; }
+
+.view-id-wholesalers #edit-distance-search-units-wrapper {
+  margin-top: 15px; }
+
+.view-id-wholesalers .view-content .views-field-title {
+  font-weight: bold;
+  display: inline;
+  margin-right: .5em;
+  margin-bottom: 0;
+  text-decoration: none; }
+
+.view-id-wholesalers .view-content .views-field-title a {
+  text-decoration: none;
+  color: #000000; }
+
+.view-id-wholesalers .view-content .views-field-distance {
+  display: inline;
+  font-size: .9em;
+  font-style: italic; }
+
+.view-id-wholesalers .view-content .views-field-address {
+  margin-top: .5em;
+  margin-bottom: .5em; }
+
+.view-id-wholesalers .view-content .views-field-field-phone-value .views-label-field-phone-value {
+  display: inline; }
+
+.view-id-wholesalers .view-content .views-field-view-node {
+  margin-bottom: 1em; }
+
+.view-id-wholesalers .view-content .views-field-field-plant-programs-nid {
+  overflow: hidden; }
+
+.view-id-wholesalers .view-content .views-field-field-plant-programs-nid .field-item {
+  float: left;
+  width: auto;
+  height: 42px;
+  overflow: hidden;
+  margin: 0 .5em .5em 0; }
+
+/**
+ * Related Plants Views
+ **/
+.related-plants .view-content {
+  display: block;
+  overflow: auto;
+  text-align: center; }
+
+.related-plants .view-content .views-row {
+  width: 28%;
+  float: left;
+  margin: 0.5em 2%; }
+
+/**
+ * Landscape Gallery
+ */
+.view-Landscape-Gallery table.views-view-grid {
+  width: 100%; }
+
+.view-Landscape-Gallery table.views-view-grid tr td {
+  padding-bottom: 1em; }
+
+/**
+ * Block Specific
+ **/
+/**
+ * Email Signup Block
+ **/
+#block-winners_circle-email_signup {
+  margin-bottom: .5em; }
+
+#block-winners_circle-email_signup .block-subject {
+  display: none; }
+
+#sidebar #block-winners_circle-email_signup .block-content {
+  padding: 0; }
+
+/**
+ * Ubercart
+ **/
+.out-of-stock {
+  font-size: 1.2em;
+  color: #B45A97;
+  font-weight: bold; }
+
+/**
+* Products
+**/
+div.node-product div.content div.catalog .professionals-prompt {
+  left: 0;
+  top: 45px; }
+
+/**
+ * Catalogs
+ **/
+div.catalog .category-title a {
+  color: #000; }
+
+div.catalog table.category td.category {
+  vertical-align: bottom; }
+
+div.catalog table.category td.category .category-title {
+  font-size: 1.5em; }
+
+div.catalog table.category td.category .category-title
+, div.catalog table.category td.category .category-title a {
+  color: #000; }
+
+div.catalog table.category-products .out-of-stock {
+  text-align: center;
+  margin: 0; }
+
+/**
+ * Shopping Cart
+ **/
+#cart-form-products, #cart-form-buttons {
+  border: none; }
+
+#cart-form-products .item-title {
+  font-size: 1.15em;
+  margin-bottom: .5em;
+  line-height: 1.2em; }
+
+#cart-form-products .item-title p {
+  text-decoration: inherit; }
+
+#cart-form-products .item-description {
+  font-size: .9em; }
+
+#cart-form-products .field-field-disclaimer {
+  margin: .5em 0 0 .5em; }
+
+#cart-form-products .plant-name .series-variety {
+  display: block; }
+
+#cart-form-products .field-field-disclaimer .field-label {
+  text-align: left; }
+
+#cart-form-pane #continue-shopping-link {
+  margin-left: 0;
+  position: static; }
+
+#cart-form-pane #continue-shopping-link, #cart-form-buttons div.button {
+  clear: both;
+  margin: .5em 0;
+  float: right; }
+
+#cart-form-products .subtotal {
+  color: #4b6b3a;
+  font-size: 1.15em;
+  line-height: 1.2em; }
+
+#uc-coupon-block-form {
+  width: 310px;
+  overflow: hidden;
+  padding-top: 3px; }
+
+#uc-coupon-block-form label {
+  display: none; }
+
+#uc-coupon-block-form #edit-code-wrapper, #uc-coupon-block-form div.button {
+  display: block;
+  float: left;
+  margin: 0; }
+
+/**
+ * Checkout
+ **/
+#uc-cart-checkout-form #quote {
+  clear: both; }
+
+#checkout-form-bottom .form-button, #checkout-form-bottom .form-submit {
+  margin: 0; }
+
+/**
+ * Interior Banners
+ **/
+.banner-title {
+  position: relative;
+  margin: -44px 0 .5em 0; }
+
+.banner-title .banner {
+  text-align: center; }
+
+.banner-title h1 {
+  position: relative;
+  left: 14px;
+  top: 34px; }
+
+/* Flags */
+.flag-bookmarks a.flag-action {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/FavStar-off.png") no-repeat scroll 0 50% transparent; }
+
+.flag-bookmarks a.unflag-action {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/FavStar-on.png") no-repeat scroll 0 50% transparent; }
+
+/**
+ * User Pictures
+ **/
+.node .picture {
+  float: right;
+  margin: 0 0 1em 1em; }
+
+/**
+ * Plant naming
+ **/
+.plant-name {
+  color: #497136;
+  font-weight: normal; }
+
+.plant-name .genus
+, .plant-name .species {
+  font-style: italic; }
+
+.plant-name .series-variety {
+  color: #B45A97; }
+
+.plant-name .variety-patented
+, .plant-name .series-patented
+, .plant-name .series-variety-patented {
+  font-weight: bold; }
+
+.plant-name .field-field-pronunciation-audio-file {
+  float: left;
+  margin: 0;
+  display: none; }
+
+h1 .plant-name .field-field-pronunciation-audio-file {
+  display: block; }
+
+.views-exposed-form.plant-products .views-exposed-widget {
+  float: left; }
+
+.views-exposed-form.plant-products label {
+  float: left;
+  padding: 1px 8px 0 0;
+  letter-spacing: -1px;
+  font-weight: normal; }
+
+.meta-bar {
+  clear: both;
+  overflow: auto;
+  border-color: #D4D4D4;
+  border-style: solid;
+  border-width: 1px 0;
+  margin: 0 0 9px;
+  overflow: hidden;
+  padding: 6px 0 7px;
+  width: 100%; }
+
+.rate-fivestar-btn-filled,
+.rate-fivestar-btn-half,
+.rate-fivestar-btn-empty {
+  display: block;
+  float: left;
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/rate3.png") no-repeat scroll transparent;
+  width: 20px;
+  height: 19px;
+  text-indent: 100px;
+  overflow: hidden; }
+
+.rate-fivestar-btn-filled {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/rate1.png") no-repeat scroll transparent; }
+
+.rate-fivestar-btn-half {
+  background: url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/rate2.png") no-repeat scroll transparent; }
+
+.rate-fivestar-value {
+  color: #000000;
+  float: left;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: Georgia,serif;
+  font-weight: bold;
+  padding: 0 0 0 5px; }
+
+.rate-box .not-rated {
+  background: url("/sites/all/themes/provenwinners/images/rate2.gif") no-repeat scroll 100% 0 transparent;
+  display: block;
+  line-height: 19px;
+  padding: 0 20px 0 0; }
+
+.home-page #block-views-articles-block_1 {
+  overflow: hidden; }
+
+.container .as-seen-in {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.container .as-seen-in img {
+  float: right;
+  overflow: auto; }
+
+.container .as-seen-in div {
+  clear: right;
+  float: right;
+  overflow: auto;
+  padding: 0px 9px 10px 0;
+  margin: -18px 0px 0px 0px;
+  width: 120px;
+  font: bold 0.917em/0.818em Georgia, serif;
+  text-align: right;
+  color: #363636;
+  height: 18px;
+  overflow: hidden; }
+
+.container .as-seen-in span {
+  display: block;
+  font: bold 1em/0.818em Arial, Helvetica, sans-serif;
+  color: #b45a97;
+  text-transform: uppercase; }
+
+.views-field-node-count a {
+  color: #497136;
+  font-size: 1.167em;
+  line-height: 1.25em;
+  text-decoration: none; }
+
+.views-field-node-count a:hover {
+  text-decoration: underline; }
+
+/* Container Gardening */
+.major-holder {
+  border-top: 1px solid #D4D4D4;
+  padding: 5px 0 0 0; }
+
+.major-holder:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.icons .views-field-field-plant-program-logo-fid {
+  display: table-cell;
+  width: 68px;
+  height: 42px;
+  vertical-align: middle;
+  text-align: center; }
+
+/**
+ * Views
+ */
+.views-exposed-form fieldset.advanced .views-exposed-widget {
+  width: 100%; }
+
+.views-exposed-form fieldset.advanced .views-exposed-widget input
+, .views-exposed-form fieldset.advanced .views-exposed-widget select {
+  width: 99%; }
+
+/**
+ * Generic Teasers View
+ */
+.view-generic-teasers {
+  content: "";
+  display: block;
+  clear: both; }
+
+.view-generic-teasers .views-row {
+  position: relative;
+  margin-bottom: 1em;
+  padding: 1em .5em;
+  border: 1px solid #dbf5d9;
+  background: #fff url("//c1.provenwinners.com/sites/all/themes/provenwinners_mobile/images/bg-fieldset.png") repeat-x 0 0;
+  overflow: hidden; }
+
+.view-generic-teasers .views-field-field-ifa-upload-fid {
+  float: left;
+  width: 33%;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  max-width: 175px; }
+
+.view-generic-teasers .views-field-field-ifa-upload-fid img {
+  width: 100%; }
+
+.view-generic-teasers .views-field-title {
+  font-size: 1.2em;
+  font-weight: bold; }
+
+.view-generic-teasers .views-field-view-node {
+  position: absolute;
+  right: 1em;
+  bottom: .5em; }
+
+/* The more link is inherited */
+/**
+ * Field Specific
+ **/
+.field-field-plant-programs .field-item img {
+  vertical-align: middle; }
+
+/**
+ * Javascript
+ */
+.js-required {
+  display: none; }
+
+html.js .js-required {
+  display: block; }
+
+html.js .js-hide {
+  display: none; }
+
+/**
+ * Jquery Styles
+ **/
+.ui-tabs-hide {
+  display: none; }
+
+/**
+ * Hints
+ **/
+.ui-hint {
+  color: #999999; }
+
+/*# sourceMappingURL=all.css.map */

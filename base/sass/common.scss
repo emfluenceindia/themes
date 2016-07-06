@@ -1,0 +1,93 @@
+// This is where responsive theming should go, as it will apply to both desktop and mobile themes.
+// Do not create a common.css in either of the other themes as it will override this.
+
+@import '../../provenwinners/sass/_common_variables';
+
+@import 'all/_normalize';
+
+@media (min-width: $mobile_breakpoint) {
+  #content .aside {
+    border-left: 1px solid #D4D4D4;
+    clear: right;
+    float: right;
+    min-height: 400px;
+    height: auto !important;
+    height: 400px;
+    width: 185px;
+  }
+}
+
+@import 'all/_layout';
+@import 'all/_abstract';
+@import 'all/_ui';
+@import 'all/_links';
+@import 'all/_content';
+@import 'all/_node_visual';
+@import 'all/_content_visual_with_aside';
+@import 'all/_block_email_signup';
+
+@import 'all/_comment';
+
+@import 'all/_footer';
+
+@import 'all/_plant_identity';
+@import 'all/_plant_identity_grid';
+@import 'all/_plant_identity_page';
+@import 'all/_plant_identity_page_overview_box';
+@import 'all/_plant_combination';
+@import 'all/_image_grid_views';
+@import 'all/_combination_search';
+
+@import 'all/_node_retailer';
+@import 'all/_find_retailer';
+@import 'all/_page_professionals';
+
+@import 'all/_location.scss';
+
+@import 'all/_node_wholesaler';
+
+@import 'all/_product';
+@import 'all/_pizza_status';
+@import 'all/_pizza_voucher';
+
+@import 'all/_ubercart';
+@import 'all/_ubercart_cart';
+@import 'all/_ubercart_checkout';
+@import 'all/_ubercart_catalog';
+
+@import 'all/_blog';
+@import 'all/_media-nav';
+
+@import 'all/_rate';
+@import 'all/_tabs_block';
+@import 'all/_form_search3';
+
+
+.node-article.full {
+  .holder {
+    img { margin: 1em; }
+    table img { margin: 0; }
+    tbody { border-top: none; }
+    p { line-height: 1.4em; }
+  }
+  
+  @media ( max-width: 500px ) {
+    .holder img {
+      display: block;
+      float: none !important;
+      margin: 2em auto !important;
+    }
+    .meta {
+      margin: 2em auto;
+    }
+  }
+  
+}
+
+.lifestyle-home-banner {
+  margin: 0 0.75em 0.75em 0.75em;
+  @media(min-width: $mobile_breakpoint) {
+    float: left;
+    margin: 0 0 15px 15px;
+  }
+}

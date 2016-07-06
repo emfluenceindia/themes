@@ -1,0 +1,56 @@
+.rate-holder {
+  padding: 9px 0 0 0;
+  height: 1%;
+}
+
+.rate-box {
+  overflow: hidden;
+  padding: 3px 7px 0;
+  width: 140px;
+  height: 45px;
+  background: none no-repeat scroll 0 0 #FFF;
+  border: 1px solid #E6E6E6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  float: right;
+}
+
+.rate-holder .rate-box {
+  position: relative;
+  float: right;
+  margin: 0 -5px 0 0;
+}
+
+.recipe-block .visual .rate-box {
+  position: absolute;
+  top: 283px;
+  left: 0;
+}
+
+.rate-box .title {
+  display: block;
+  padding: 0 0 5px;
+  font: bold 11px/14px Georgia, serif;
+  letter-spacing: -1px;
+  color: #497136;
+}
+
+.rate-box img {float: left;}
+
+.rate-box .number {
+  float: left;
+  padding: 0 0 0 5px;
+  font: bold 12px/16px Georgia, serif;
+  color: #000;
+}
+
+.rate-holder .links {
+  overflow: hidden;
+  padding: 2px 0 0;
+  width: 100%;
+  text-align: right;
+  font: bold 10px/12px Arial, Helvetica, sans-serif;
+}
+
+.rate-holder .links a {color: #497136;}

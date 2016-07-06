@@ -1,0 +1,30 @@
+.tabs-block {padding: 0 8px 0 0;}
+
+.tabs-block .nojs-tabset,
+.tabs-block .tabset {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 -1px;
+  padding: 0 0 0 6px;
+  height: 1%;
+  list-style: none;
+}
+.tabs-block .nojs-tabset li,
+.tabs-block .tabset li {
+  float: left;
+  margin: 0 -5px 0 0;
+}
+.tabs-block .nojs-tabset li a,
+.tabs-block .tabset li a {
+  float: left;
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #166310;
+  cursor: pointer;
+}
+.tabs-block .tab-holder .row {
+  overflow: hidden;
+  width: 100%;
+}
